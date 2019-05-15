@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Fashion Boulevard</title>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic' rel='stylesheet' type='text/css'>
+  <link href="style/main.css" rel="stylesheet">
+</head>
+<body class="main-body">
+
+<!-- Шапка, верхнее навигационное меню -->
+ <header>
+    <div class="container">
+      <nav>
+        <ul class="menu">
+          <li class="active"><a href="index.html">Главная</a></li>
+          <li><a href="#info">Информация</a></li>
+          <li><a href="#news">Новости</a></li>
+          <li><a href="price.html">Прайс-лист</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <!-- Кнопка входа -->
+      <div class="menu-enter"> 
+        <a class="enter" href="#">Вход</a>
+      </div>
+   </div>
+</header>
+
+  <!-- Основная информация о сайте -->
+  <div class="container">
+    <main class="main-index">
+
+	<!-- Логотип -->
+      <div class="logo">
+          <a href="index.html"></a>
+      </div>
+  <!-- Достоинства (Виолетта) -->    
+    <div class="row">
+        <div class="col col1">
+          <div class="feature">
+            <a name="info"></a>
+            <p class="feature-title">Экономия</p>
+            <p class="feature-description">"Дешево не значит плохо" ! Расценки на наши услуги придутся нам по душе, поскольку не выходят за пределы 1500 рублей. Придя к нам вы не только экономите свои финансы, но и ваше время, поскольку весь процесс будет занимать у вас не более 30 минут.</p>
+          </div>
+        </div>
+        <div class="col col1">
+          <div class="feature">
+            <p class="feature-title">Качество</p>
+            <p class="feature-description">У нас работают только высококачественные специалисты, знающие свое дело. Профессионалы не стоят на месте и постоянно развиваются, поэтому Вы легко можете доверить свои волосы в руки специалисту и не волноваться</p>
+          </div>
+        </div>
+        <div class="col col1">
+          <div class="feature">
+            <p class="feature-title">Результат</p>
+            <p class="feature-description">Доверившись профессионалам результат не даст долго ждать. От нас никто не уходил с плохим настроением и испорченной прической. </p>
+          </div>
+        </div>
+      </div>
+     
+<!-- Новости (Виолетта)  -->
+   <section class="index">
+        <div class="row">
+          <div class="col col2">
+              <a name="news"><h2 class="index-title">Новости</h2></a>
+              <ul class="news">
+                <li><a href="#">мы переехали на новый адрес. Теперь наш салон стал более комфортным и превлекательным, появилось место ожидания приема специалиста и место для детишек</a><span class="date-25sep">10 апреля 2019</span></li>
+                 <li><a href="#">завершился ежегодный областной конкурс мастерства укладки "В Тренде". Наша команда заняла почетное II место.</a><span class="date-25sep">28 апреля 2019</span></li>
+                <li><a href="#">В нашем салоне появилась функция удаленной записи на прием. Теперь записаться к специалисту вы можете on-line через наш сайт.</a><span class="date-29sep">2 мая 2019</span></li>
+              </ul>
+              <a class="btn news-btn" href="#">Все новости</a>
+          </div>
+          <div class="col col2 offset2 gallery">
+          <!-- Фотогалерея  -->
+            <h2 class="index-title">Фотогалерея</h2>
+              <div class="interior">
+                <div class="interior-wrapper">
+                  <a href="#"><img class="int-photo visible" src="img/interior-1.jpg" height="164" width="286" alt="Интерьер-1"></a>
+                  <a href="#"><img class="int-photo" src="img/interior-2.jpg" height="164" width="286" alt="Интерьер-2"></a>
+                  <a href="#"><img class="int-photo" src="img/interior-3.jpg" height="164" width="286" alt="Интерьер-3"></a>
+                </div>
+              </div>
+              <a class="btn prev" href="#">Назад</a>
+              <a class="btn next" href="#">Вперед</a>
+          </div>
+        </div>
+      </section>
+<!-- Данные  -->
+      <section class="index">
+        <div class="row">
+
+          <div class="col col2">
+            <a name="contacts"><h2 class="index-title">Контактная информация</h2></a>
+            <p class="index-contacts">«Fashion Boulevard»</p>
+            <p class="index-contacts">Адрес: г. Лысьва, ул. Мира, д. 15, торговый центр "Алмаз", 2 этаж</p>
+            <p class="index-contacts phone-text">Телефон: +7 (952) 882-77-07</p>
+            <p class="index-contacts">Время работы:</p>
+            <p class="index-contacts">Пн — пт: с 8:00 до 22:00</p>
+            <p class="index-contacts last">Сб — вс: с 10:00 до 18:00</p>
+          </div>
+
+          <div class="col col2 offset2">
+            <form id="book-form" action="#" method="post">
+              <h2 class="index-title">Записаться</h2>
+              <p class="form-text">Укажите предполагаемую дату и время приема, и наш Специалист свяжется с Вами для подтверждения брони</p>
+              <label class="book_label" for="book_date">
+                <input type="text" id="book_date" name="date" placeholder="Дата ДД/ММ" pattern="(0[1-9]|[12][0-9]|3[01])[\/](0[1-9]|1[012])">
+              </label>
+              <label class="book_label" for="book_time">
+                <input type="text" id="book_time" name="time" placeholder="Время ЧЧ/ММ" pattern="([0-1]\d|2[0-3])[:]([0-5]\d)">
+              </label>
+              <label class="book_label" for="book_name">
+                <input type="text" id="book_name" name="name" placeholder="Ваше имя" pattern="[А-Яа-яЁё]+">
+              </label>
+              <label class="book_label" for="book_phone">
+                <input type="text" id="book_phone" name="phone" placeholder="Телефон" pattern="[\d() -]+">
+              </label>
+              <input type="submit" class="btn" value="Отправить">
+            </form>
+          </div>
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Футер -->
+  <footer class="index">
+    <div class="container">
+      <div class="row">
+        <div class="col col1">
+          <p>«Fashion Boulevard»<br>
+             Адрес: г. Лысьва, ул. Мира, д. 15, торговый центр "Алмаз", 2 этаж<br>
+             Телефон: +7 (952) 882-77-07</p>
+        </div>
+	<!-- Ссылки на соц. сети -->
+        <div class="col col1">
+          <div class="social">
+            <div class="social-icons">
+              <a class="social-icon vk" href="https://vk.com/" target="_blank">vk</a>
+              <a class="social-icon fb" href="https://www.facebook.com/" target="_blank">fb</a>
+              <a class="social-icon insta" href="https://instagram.com/" target="_blank">insta</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
