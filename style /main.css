@@ -387,3 +387,99 @@ p+p {
   -webkit-appearance: none;
   -webkit-border-radius: 0px;
 }
+/* ПРАЙС-ЛИСТ */
+   /*НАДПИСЬ в прайс-лист "БУДЬ ЛУЧШЕ СЕЙЧАС"*/
+.classics {
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 62px;
+  font-size: 48px;
+  line-height: 42px;
+  font-weight: 700;
+}
+   /*ЛИНИИ перед надписью "БУДЬ ЛУЧШЕ СЕЙЧАС"*/
+.classics:before,
+.classics:after {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  top:-4px;
+  width: 50%;
+  position: relative;
+  vertical-align: middle;
+  background-color: #000000;
+}
+    /*для ЛЕВОЙ линии*/
+.classics:before {
+  right: 24px;
+  margin-left: -50.3%;
+}
+    /*для ПРАВОЙ линии */
+.classics:after {
+  left: 16px;
+  margin-right: -51.2%;
+}
+    /*Надписи "о средствах" и "о ценах"*/
+.price-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  width: 240px;
+}
+    /*о ценах*/
+.price-table {
+  width: 180px;
+}
+    /*отступ между прайс листом и описанием*/
+.about-us {
+  margin: 63px 0 27px 10px;
+}
+   /*Списки СКАДКИ и АКЦИИ*/
+ul.list li{
+  padding-left: 20px;
+  margin-bottom: 23px;
+  position: relative;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+    /*Маркеровка списка*/
+ul.list li:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  top: 2px;
+  left: 1px;
+  background-color: #000000;
+  -webkit-transform:rotate(45deg);
+    transform: rotate(45deg);
+}
+
+ul.list li:last-child {
+  margin-bottom: 0;
+}
+    /*ТАБЛИЦА ПРАЙС-ЛИСТ*/
+table {
+  width: 100%;
+  font-size: 14px;
+}
+    /*ПРАЙС-лист ЦЕНЫ*/
+table .price-text {
+  text-align: center;
+}
+    /*Колонки таблицы прайс-лист*/
+td {
+  border: 2px solid black;
+  width: 50%;
+  padding: 0 17px;
+  height: 39px;
+  vertical-align: middle;
+  }
+
+    /*подсветка строки таблицы при наведении курсора */
+tr:hover{
+	background-color: #D2B48C;
+}
