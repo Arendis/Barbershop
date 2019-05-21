@@ -1,0 +1,389 @@
+﻿/* Основные */
+* {
+  font-family: 'PT Sans Narrow', sans-serif; 
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500; 
+}
+
+body   
+{
+  background: url(../img/bckgr.png);
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto;  /* auto */
+  -webkit-box-sizing: border-box; /* Для Safari и Chrome */
+  -moz-box-sizing: border-box; /* Для Firefox */
+  box-sizing: border-box; /* Для IE и Opera */
+}
+
+.col {
+  float: left;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box; /* Для Safari и Chrome */
+  -moz-box-sizing: border-box; /* Для Firefox */
+  box-sizing: border-box; /* Для IE и Opera */
+}
+
+.row {
+  margin-left: -5%;
+  margin-right: -5%;
+}
+
+.row:after,
+header:after,
+section.index:after,
+.container:after{
+  content:'';
+  display: table;
+  clear: left;
+}
+
+.col1 {
+  width: 33%;
+}
+
+.col2 {
+  width: 40%;
+}
+
+.col3 {
+  width: 50%;
+}
+
+.offset1 {
+  margin-left: 20%;
+}
+
+.offset2 {
+  margin-left: 20%;
+}
+
+/* Хэдер */
+header {
+  background-color: #000000;
+}
+
+nav {
+  float: left;
+  width: 80%;
+}
+
+ul.menu {
+  list-style: none;
+  width: 800px;
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu li {
+  float: left;
+}
+
+ul.menu a,
+.menu-enter a {
+  display: block;
+  padding: 30px 20px;
+  font-size: 20px;
+}
+/* Подсветка */
+ul.menu a:hover,
+.menu-enter a:hover {
+  background-color: #32221a;
+}
+
+ul.menu li.active a {
+  position: relative;
+}
+/* Подчеркивание */
+ul.menu li.active a:after {
+  content: "";
+  display: block;
+  height: 5px;
+  background: #ffffff;
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  bottom: 0;
+}
+/* Цвет текста */
+header a{
+  color: #ffffff;
+}
+/* Вход */
+.menu-enter a{
+  float: left;
+  max-width: 25%;
+  position: relative;
+  padding-left: 5%;
+}
+
+.menu-enter a:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 16px;
+  background: url(../img/icon-login.png) 0 0;
+  top: 29px;
+  left: 20px;
+}
+
+.menu-enter a:hover:before {
+  background: url(../img/icon-login.png) 0 -15px;
+}
+
+/* Футер */
+footer {
+  padding: 5% 0;
+  background: url(../img/footer-bckgr.png) 0 0;
+  color: #ffffff;
+  line-height: 20px;
+  font-size: 16px;
+  position: relative;
+}
+
+footer.index:before {
+  content: none;
+}
+
+.social {
+  text-align: right;
+  }
+
+.social-icons {
+  font-size: 50px;
+}
+
+.social a {
+  display: inline-block;
+  background-image: url(../img/social-icons.png);
+  width: 43px;
+  height: 43px;
+  font-size: 14px;
+  margin-right: 5px;
+
+}
+
+.vk:hover{
+  background-position: 0 43px;
+}
+
+.fb {
+  background-position: -43px 0;
+}
+
+.fb:hover {
+  background-position: -43px 43px;
+}
+
+.insta {
+  background-position: -86px 0;
+}
+
+.insta:hover {
+  background-position: -86px 43px;
+}
+
+
+/* Главная страница */
+.main-body {
+  background: url(../img/bckgr-index.jpg) 50% 0 no-repeat;
+}
+
+.logo {
+  padding: 57px 0 31px 0;
+  text-align: center;
+  margin-left: 14px;
+}
+
+.logo a{
+  display: block;
+  margin: 0 auto;
+  font-size: 0;
+  background: url(../img/logo.png) no-repeat;
+  width: 368px;
+  height: 204px;
+}
+/* Экономия, качество, результат */
+.feature-title {
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+/* Ромбики */
+.feature-description:before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -50px;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.feature-description {
+  text-align: center;
+  margin-bottom: 80px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+/* 1 блок */
+section.index {
+  padding: 50px 50px 50px 80px;
+  background: url(../img/bckgr.png);
+  margin-bottom: 35px;
+  position: relative;
+}
+/* 2 блок растояние от футера */
+section.index:last-child {
+  margin-bottom: 30px;
+  padding-bottom: 40px;
+}
+/* Даты новостей */
+.date-25sep {
+  display: block;
+  font-family: Georgia;
+  font-style: italic;
+  text-transform: none;
+  margin-top: 0px;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 24px;
+}
+/* Интервал 1 блок*/
+.news li {
+  line-height: 25px;
+}
+/* Интервал 2 блок*/
+.news li:last-child{
+  margin-top: 25px;
+}
+/* Текс ссылок*/
+.news li a{
+  color: #000000;
+}
+
+.index-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.interior-wrapper {
+  position: relative;
+  min-height: 200px;
+}
+/* рамка фото*/
+.int-photo {
+  position: absolute;
+  border: 5px solid #000000;
+  margin-top: 5px;
+}
+
+.int-photo.visible {
+  z-index: 2;
+}
+/* Кнопки в блоке 1*/
+.btn {
+  width: 140px;
+  background-color: #000000;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 30px;
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 0px;
+}
+/* Подсветка */
+.btn:hover {
+  background-color: #32221a;
+}
+
+/* Кнопки назад вперед */
+.btn.prev{
+  margin-right: 15px;
+  color: #ffffff;
+}
+/* Контактная информация */
+.phone-text {
+  margin-bottom: 10px;
+}
+
+.index-contacts.last {
+  margin-bottom: 11px;
+}
+
+p+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form-text {
+  margin-bottom: 25px;
+}
+ 
+ /* Запись формы заполнения */
+ 
+#book-form label {
+  display: inline-block;
+}
+
+#book-form input[type="text"] {
+  width: 150px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 50px;
+  color: #000000;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  font-size: 16px;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  display: block;
+}
+ /* Кнопка отправить */
+#book-form input[type="submit"],
+.enter-form input[type="submit"] {
+  border: none;
+  margin: 0;
+  margin-top: 13px;
+  padding: 0;
+  height: 50px;
+  width: 320px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
