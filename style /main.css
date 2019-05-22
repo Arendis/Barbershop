@@ -5,26 +5,26 @@
   font-size: 16px;
   font-weight: 500; 
 }
-
+/* Фоновая картинка */
 body   
 {
   background: url(../img/bckgr.png);
 }
-
+/* Пояснение к записи */
 p {
   font-size: 14px;
   line-height: 20px;
 }
-
+/* Гиперссылки */
 a {
   text-decoration: none;
   color: #000000;
 }
-
+/* Отменяет маркеры для списка */
 li {
   list-style: none;
 }
-
+/* Блоки для основной информации */
 .container {
   width: 1000px;
   padding: 0 10px;
@@ -33,7 +33,7 @@ li {
   -moz-box-sizing: border-box; /* Для Firefox */
   box-sizing: border-box; /* Для IE и Opera */
 }
-
+/* Колонки с текстом */
 .col {
   float: left;
   padding: 0 10px;
@@ -41,7 +41,7 @@ li {
   -moz-box-sizing: border-box; /* Для Firefox */
   box-sizing: border-box; /* Для IE и Opera */
 }
-
+/* Ширина текста */
 .row {
   margin-left: -5%;
   margin-right: -5%;
@@ -55,7 +55,7 @@ section.index:after,
   display: table;
   clear: left;
 }
-
+/* Расположение колонок с текстом */
 .col1 {
   width: 33%;
 }
@@ -80,7 +80,7 @@ section.index:after,
 header {
   background-color: #000000;
 }
-
+/* Выравнивание */
 nav {
   float: left;
   width: 80%;
@@ -206,9 +206,9 @@ footer.index:before {
 .main-body {
   background: url(../img/bckgr-index.jpg) 50% 0 no-repeat;
 }
-
+/* Логотип Положение */
 .logo {
-  padding: 57px 0 31px 0;
+  padding: 57px 400px 31px 0;
   text-align: center;
   margin-left: 14px;
 }
@@ -269,7 +269,8 @@ section.index:last-child {
   padding-bottom: 40px;
 }
 /* Даты новостей */
-.date-25sep {
+.date-25sep,
+.date-29sep {
   display: block;
   font-family: Georgia;
   font-style: italic;
