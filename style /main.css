@@ -9,6 +9,7 @@
 body   
 {
   background: url(../img/bckgr.png);
+  margin: 0;	
 }
 /* Пояснение к записи */
 p {
